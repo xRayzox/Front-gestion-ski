@@ -3,7 +3,7 @@ FROM node:18-alpine
 COPY package.json package-lock.json ./
 
 # Install a specific version of Angular CLI
-RUN npm i -g @angular/cli@<desired_version>
+RUN npm i -g @angular/cli
 
 # Install app dependencies
 RUN npm i 

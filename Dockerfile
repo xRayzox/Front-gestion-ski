@@ -4,12 +4,6 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-# Install a specific version of Angular CLI
-RUN npm install -g @angular/cli
-
-# Install app dependencies
-RUN npm install 
-
 # Build the Angular app
 RUN ng build
 
